@@ -1,0 +1,8 @@
+name: FastChestContent
+version: '${project.version}'
+main: main.fcc.FastChestContent
+api-version: 1.19
+description: "The plugin allows you to quickly get a list of the contents of the chest, used to fill in configs."
+commands:
+  fcc:
+    description: "On/Off output the contents of the chest to the console"
