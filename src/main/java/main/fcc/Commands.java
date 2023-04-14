@@ -11,10 +11,10 @@ public class Commands implements CommandExecutor {
 
         if (FastChestContent.getInteractFlag().get(sender.getName()) == null || !FastChestContent.getInteractFlag().get(sender.getName())) {
             FastChestContent.getInteractFlag().put(sender.getName(), true);
-            sender.sendMessage(ChatColor.GRAY + "Вы включили " + ChatColor.YELLOW + "FCC" + ChatColor.GRAY + " для себя");
+            sender.sendMessage(ChatColor.GRAY + "Вы включили " + ChatColor.YELLOW + "FastChestContent" + ChatColor.GRAY + " для себя");
         } else {
             FastChestContent.getInteractFlag().put(sender.getName(), false);
-            sender.sendMessage(ChatColor.GRAY + "Вы отключили " + ChatColor.YELLOW + "FCC" + ChatColor.GRAY + " для себя");
+            sender.sendMessage(ChatColor.GRAY + "Вы отключили " + ChatColor.YELLOW + "FastChestContent" + ChatColor.GRAY + " для себя");
         }
 
         return true;
