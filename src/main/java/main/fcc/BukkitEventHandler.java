@@ -13,6 +13,9 @@ import java.util.ArrayList;
 public class BukkitEventHandler implements Listener {
     @EventHandler
     public void onInventoryOpen(InventoryOpenEvent event) {
+        if (FastChestContent.getInteractFlag().get(event.getPlayer().getName()) == null) {
+            return;
+        }
         if (FastChestContent.getInteractFlag().get(event.getPlayer().getName())) {
             if (event.getInventory().getType() == InventoryType.CHEST) {
                 ItemStack[] contents = event.getInventory().getContents();
